@@ -1,0 +1,20 @@
+{
+  "name": "denso-dashboard",
+  "version": "1.0.0",
+  "description": "Dashboard de supervisão e atuação da ETE",
+  "main": "main.js",
+  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ifam-cthm/denso-dashboard.git"
+  },
+  "author": "Jonathas Sanots",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ifam-cthm/denso-dashboard/issues"
+  },
+  "homepage": "https://github.com/ifam-cthm/denso-dashboard#readme"
+}
