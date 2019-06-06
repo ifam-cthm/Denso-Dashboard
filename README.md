@@ -1,8 +1,8 @@
-# electron-vue-admin
+# Denso Dashboard
 
 > An electron-vue project
 
-This is a vue electron admin project base on  [vueAdmin-template](https://github.com/PanJiaChen/vueAdmin-template) , and was generated from [electron-vue](https://github.com/SimulatedGREG/electron-vue) using [vue-cli](https://github.com/vuejs/vue-cli). Documentation about this project can be found [here](https://simulatedgreg.gitbooks.io/electron-vue/content/index.html).
+Projeto do módulo de supervisão da estação de tratamento de esgoto relacioando ao projeto com o cliente Denso
 
 ## Build Setup
 
@@ -23,10 +23,3 @@ npm run lint
 npm run pack
 ```
 ---
-
-
-## Demo
-
-![](https://github.com/PanJiaChen/PanJiaChen.github.io/blob/master/images/electron-login.png)
-
-![](https://github.com/PanJiaChen/PanJiaChen.github.io/blob/master/images/electron-admin.gif)
