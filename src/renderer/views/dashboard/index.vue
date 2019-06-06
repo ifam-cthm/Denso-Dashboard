@@ -1,5 +1,6 @@
 <template>
   <div class="dashboard-container">
+    <panel-group/>
     <div class="dashboard-text">name:{{name}}</div>
     <div class="dashboard-text">
       roles:
@@ -10,11 +11,15 @@
 
 <script>
 import { mapGetters } from 'vuex'
+import PanelGroup from '../../../renderer/components/PanelGroup'
 
 export default {
   name: 'dashboard',
   computed: {
     ...mapGetters(['name', 'roles'])
+  },
+  components: {
+    PanelGroup
   }
 }
 </script>
