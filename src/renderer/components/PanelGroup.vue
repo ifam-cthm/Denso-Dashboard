@@ -1,46 +1,63 @@
 <template>
   <el-row :gutter="40" class="panel-group">
     <el-col :xs="12" :sm="12" :lg="6" class="card-panel-col">
-      <div class="card-panel">
-        <div class="card-panel-icon-wrapper icon-people">
-          <svg-icon icon-class="oxygen-svgrepo-com" class-name="card-panel-icon"/>
-        </div>
-        <div class="card-panel-description">
-          <div class="card-panel-text">Oxigênio</div>
-            <count-to :start-val="10" :end-val="14" :duration="1000000" :decimals="2" class="card-panel-num"/>
-        </div>
-      </div>
-    </el-col>
-    <el-col :xs="12" :sm="12" :lg="6" class="card-panel-col">
-      <div class="card-panel">
-        <div class="card-panel-icon-wrapper icon-message">
-          <svg-icon icon-class="ph-meter" class-name="card-panel-icon"/>
-        </div>
-        <div class="card-panel-description">
-          <div class="card-panel-text">pH</div>
-            <count-to :start-val="6" :end-val="8" :duration="1000000" :decimals="2" class="card-panel-num"/>
+      <div class="card-panel" @click="handleSetLineChartData('newVisitis')">
+        <div class="card-panel">
+          <div class="card-panel-icon-wrapper icon-people">
+            <svg-icon icon-class="oxygen-svgrepo-com" class-name="card-panel-icon"/>
+          </div>
+          <div class="card-panel-description">
+            <div class="card-panel-text">Oxigênio</div>
+              <count-to :start-val="10" :end-val="14" :duration="1000000" :decimals="2" class="card-panel-num"/>
+          </div>
         </div>
       </div>
     </el-col>
     <el-col :xs="12" :sm="12" :lg="6" class="card-panel-col">
-      <div class="card-panel">
-        <div class="card-panel-icon-wrapper icon-money">
-          <svg-icon icon-class="motion-sensor" class-name="card-panel-icon"/>
-        </div>
-        <div class="card-panel-description">
-          <div class="card-panel-text">Vazão</div>
-            <count-to :start-val="10" :end-val="14" :duration="1000000" :decimals="2" class="card-panel-num"/>
+      <div class="card-panel" @click="handleSetLineChartData('newVisitis')">
+        <div class="card-panel">
+          <div class="card-panel-icon-wrapper icon-message">
+            <svg-icon icon-class="ph-meter" class-name="card-panel-icon"/>
+          </div>
+          <div class="card-panel-description">
+            <div class="card-panel-text">pH</div>6,74</div>
         </div>
       </div>
     </el-col>
     <el-col :xs="12" :sm="12" :lg="6" class="card-panel-col">
-      <div class="card-panel">
-        <div class="card-panel-icon-wrapper icon-shopping">
-          <svg-icon icon-class="motion-sensor" class-name="card-panel-icon"/>
+      <div class="card-panel" @click="handleSetLineChartData('newVisitis')">
+        <div class="card-panel">
+          <div class="card-panel-icon-wrapper icon-money">
+            <svg-icon icon-class="motion-sensor" class-name="card-panel-icon"/>
+          </div>
+          <div class="card-panel-description">
+            <div class="card-panel-text">Vazão</div>
+              <count-to :start-val="10" :end-val="14" :duration="1000000" :decimals="2" class="card-panel-num"/>
+          </div>
         </div>
-        <div class="card-panel-description">
-          <div class="card-panel-text">Volume</div>
-            <count-to :start-val="1" :end-val="3" :duration="1000000" :decimals="2" class="card-panel-num"/>
+      </div>
+    </el-col>
+    <el-col :xs="12" :sm="12" :lg="6" class="card-panel-col">
+      <div class="card-panel" @click="handleSetLineChartData('newVisitis')">
+        <div class="card-panel">
+          <div class="card-panel-icon-wrapper icon-shopping">
+            <svg-icon icon-class="motion-sensor" class-name="card-panel-icon"/>
+          </div>
+          <div class="card-panel-description">
+            <div class="card-panel-text">Volume</div>
+              <count-to :start-val="1" :end-val="3" :duration="10000000" :decimals="2" class="card-panel-num"/>
+          </div>
+        </div>
+      </div>
+    </el-col>
+    <el-col :xs="12" :sm="12" :lg="6" class="card-panel-col">
+      <div class="card-panel" @click="handleSetLineChartData('newVisitis')">
+        <div class="card-panel">
+          <div class="card-panel-icon-wrapper icon-shopping">
+            <svg-icon icon-class="temperature" class-name="card-panel-icon"/>
+          </div>
+          <div class="card-panel-description">
+            <div class="card-panel-text">Temperatura</div>36°</div>
         </div>
       </div>
     </el-col>
@@ -53,12 +70,12 @@ import CountTo from 'vue-count-to'
 export default {
   components: {
     CountTo
+  },
+  methods: {
+    handleSetLineChartData(type) {
+      this.$emit('handleSetLineChartData', type)
+    }
   }
-  // methods: {
-  //   handleSetLineChartData(type) {
-  //     this.$emit('handleSetLineChartData', type)
-  //   }
-  // }
 }
 
 </script>
@@ -72,9 +89,10 @@ export default {
   }
 
   .card-panel {
-    height: 108px;
+    height: 250px;
+    float: none;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 30px;
     position: relative;
     overflow: hidden;
     color: #666;
@@ -130,7 +148,7 @@ export default {
 
     .card-panel-icon {
       float: left;
-      font-size: 48px;
+      font-size: 75px;
     }
 
     .card-panel-description {
@@ -142,7 +160,7 @@ export default {
       .card-panel-text {
         line-height: 18px;
         color: rgba(0, 0, 0, 0.45);
-        font-size: 16px;
+        font-size: 25px;
         margin-bottom: 12px;
       }
 
