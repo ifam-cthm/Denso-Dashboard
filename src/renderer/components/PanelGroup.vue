@@ -8,7 +8,8 @@
           </div>
           <div class="card-panel-description">
             <div class="card-panel-text">Oxigênio</div>
-              <count-to :start-val="10" :end-val="14" :duration="1000000" :decimals="2" class="card-panel-num"/>
+              <!-- <count-to :start-val="10" :end-val="14" :duration="1000000" :decimals="2" class="card-panel-num"/> -->
+              --
           </div>
         </div>
       </div>
@@ -28,11 +29,12 @@
       <div class="card-panel" @click="handleSetLineChartData('newVisitis')">
         <div class="card-panel">
           <div class="card-panel-icon-wrapper icon-money">
-            <svg-icon icon-class="motion-sensor" class-name="card-panel-icon"/>
+            <svg-icon icon-class="vazao" class-name="card-panel-icon"/>
           </div>
           <div class="card-panel-description">
             <div class="card-panel-text">Vazão</div>
-              <count-to :start-val="10" :end-val="14" :duration="1000000" :decimals="2" class="card-panel-num"/>
+              <!-- <count-to :start-val="10" :end-val="14" :duration="1000000" :decimals="2" class="card-panel-num"/> -->
+              --
           </div>
         </div>
       </div>
@@ -41,11 +43,12 @@
       <div class="card-panel" @click="handleSetLineChartData('newVisitis')">
         <div class="card-panel">
           <div class="card-panel-icon-wrapper icon-shopping">
-            <svg-icon icon-class="motion-sensor" class-name="card-panel-icon"/>
+            <svg-icon icon-class="volume" class-name="card-panel-icon"/>
           </div>
           <div class="card-panel-description">
             <div class="card-panel-text">Volume</div>
-              <count-to :start-val="1" :end-val="3" :duration="10000000" :decimals="2" class="card-panel-num"/>
+              <!-- <count-to :start-val="1" :end-val="3" :duration="10000000" :decimals="2" class="card-panel-num"/> -->
+              --
           </div>
         </div>
       </div>
@@ -58,6 +61,17 @@
           </div>
           <div class="card-panel-description">
             <div class="card-panel-text">Temperatura</div>29.8°</div>
+        </div>
+      </div>
+    </el-col>
+    <el-col :xs="12" :sm="12" :lg="6" class="card-panel-col"> 
+      <div class="card-panel" @click="handleSetLineChartData('newVisitis')">
+        <div class="card-panel">
+          <div class="card-panel-icon-wrapper icon-shopping">
+            <svg-icon icon-class="dqo" class-name="card-panel-icon"/>
+          </div>
+          <div class="card-panel-description">
+            <div class="card-panel-text">DQO</div>29.8°</div>
         </div>
       </div>
     </el-col>
@@ -89,10 +103,11 @@ export default {
   }
 
   .card-panel {
-    height: 200px;
+    width: 300px;
+    height: 150px;
     float: none;
     cursor: pointer;
-    font-size: 30px;
+    font-size: 25px;
     position: relative;
     overflow: hidden;
     color: #666;

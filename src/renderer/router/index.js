@@ -41,7 +41,7 @@ export const constantRouterMap = [
     path: '/example',
     component: Layout,
     redirect: '/example/table',
-    name: 'Example',
+    name: 'Dashboard',
     meta: { title: 'Example', icon: 'example' },
     children: [
       {
@@ -65,7 +65,7 @@ export const constantRouterMap = [
     children: [
       {
         path: 'index',
-        name: 'Form',
+        name: 'Supervisor',
         component: () => import('@/views/form/index'),
         meta: { title: 'Form', icon: 'form' }
       }
