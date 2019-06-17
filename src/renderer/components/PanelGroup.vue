@@ -20,7 +20,7 @@
             <svg-icon icon-class="ph-meter" class-name="card-panel-icon"/>
           </div>
           <div class="card-panel-description">
-            <div class="card-panel-text">pH</div>6,74</div>
+            <div class="card-panel-text">pH</div>5.45</div>
         </div>
       </div>
     </el-col>
@@ -50,14 +50,14 @@
         </div>
       </div>
     </el-col>
-    <el-col :xs="12" :sm="12" :lg="6" class="card-panel-col">
+    <el-col :xs="12" :sm="12" :lg="6" class="card-panel-col"> 
       <div class="card-panel" @click="handleSetLineChartData('newVisitis')">
         <div class="card-panel">
           <div class="card-panel-icon-wrapper icon-shopping">
             <svg-icon icon-class="temperature" class-name="card-panel-icon"/>
           </div>
           <div class="card-panel-description">
-            <div class="card-panel-text">Temperatura</div>36°</div>
+            <div class="card-panel-text">Temperatura</div>29.8°</div>
         </div>
       </div>
     </el-col>
@@ -89,7 +89,7 @@ export default {
   }
 
   .card-panel {
-    height: 250px;
+    height: 200px;
     float: none;
     cursor: pointer;
     font-size: 30px;
